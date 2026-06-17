@@ -4,14 +4,50 @@ CodePlay is a full-stack web application that lets users sign up, choose from re
 game templates, edit the game code directly in the browser, and save and run their own
 games. It was built as a Web Technology semester project.
 
+The idea is to give beginners a friendly on-ramp into game programming: instead of starting
+from a blank file, a user picks a working game template (Catch the Fruit, Maze Runner, or
+Jump Adventure), tweaks the JavaScript in an in-browser editor, previews it live, and keeps
+their creations under their own account.
+
+<p align="center">
+  <img src="docs/screenshots/01-login.png" alt="CodePlay login screen with cyberpunk background" width="800">
+</p>
+
 ## Features
 
 - **User accounts** — sign up / log in / log out with securely hashed passwords (`password_hash`).
 - **Game templates** — start from prebuilt templates (Catch the Fruit, Jump Adventure, Maze Runner).
-- **In-browser code editor** — edit a game's HTML/JavaScript and save it to your account.
-- **My Games** — view, run, and delete the games you've created.
+- **In-browser code editor** — edit a game's JavaScript and preview it live next to the code.
+- **My Games** — view, play, edit, and delete the games you've created.
 - **Run games** — play saved games directly in the browser.
-- Responsive UI built with Bootstrap 5.
+- Responsive UI built with Bootstrap 5, with cinematic full-screen video backgrounds.
+
+## How It Works
+
+**1. Sign up / log in.** Users create an account (passwords are hashed with PHP's
+`password_hash`) and sign in. The auth pages feature a full-screen cyberpunk video background.
+
+**2. Choose a game template.** After logging in, the dashboard presents the available
+starter games, each with a thumbnail and description.
+
+<p align="center">
+  <img src="docs/screenshots/02-templates.png" alt="Game template selection dashboard" width="800">
+</p>
+
+**3. Code and preview.** Selecting a template opens the editor, which loads the template's
+JavaScript on the left and a live game preview pane on the right. Users can rename the game,
+edit the code, run it, and save it to their account.
+
+<p align="center">
+  <img src="docs/screenshots/03-editor.png" alt="In-browser game code editor with live preview" width="800">
+</p>
+
+**4. Manage your games.** The "My Games" page lists every game the user has saved, with
+quick actions to play, edit, or delete each one.
+
+<p align="center">
+  <img src="docs/screenshots/04-my-games.png" alt="My Games list with play, edit, and delete actions" width="800">
+</p>
 
 ## Tech Stack
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - CodePlay</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      max-width: 400px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 100px;
+    }
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+    .footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted playsinline id="bg-video">
+    <source src="cyberpunk-2077-nighttime-metropolis.1920x1080.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="login.html">
+        <img src="logo.png" alt="CodePlay Logo" class="logo me-2">
+        CodePlay
+      </a>
+    </div>
+  </nav>
+  
+  <div class="form-container">
+    <h3 class="text-center mb-4">Sign Up</h3>
+    <form id="signupForm" action="signup.php" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <!-- Password specifications: at least 8 characters including uppercase, lowercase, and number -->
+        <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" minlength="8" required title="Password must be at least 8 characters long and include uppercase letters, lowercase letters, and numbers.">
+        <div class="form-text">Minimum 8 characters with at least one uppercase, one lowercase, and one number.</div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+      <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+  
+  <footer class="footer bg-dark text-white text-center py-2">
+    <p>© 2025 CodePlay. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

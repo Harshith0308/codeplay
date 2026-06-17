@@ -1,0 +1,27 @@
+# ---- Large media (background videos) ----
+# These are large binary assets and are intentionally not tracked in git.
+# See README for how to add them back locally.
+*.mp4
+*.mov
+*.avi
+*.webm
+
+# ---- OS / editor cruft ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# ---- IDE ----
+.vscode/
+.idea/
+
+# ---- PHP / Composer ----
+vendor/
+composer.lock
+
+# ---- Logs / temp ----
+*.log
+*.tmp

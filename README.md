@@ -1,5 +1,13 @@
 # CodePlay — Browser-Based Game Development Platform
 
+[**▶ Live Demo — play & edit the game templates in your browser**](https://harshith0308.github.io/codeplay/demo/)
+
+![PHP](https://img.shields.io/badge/PHP-8-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-database-4479A1?logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-canvas_games-F7DF1E?logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 CodePlay is a full-stack web application that lets users sign up, choose from ready-made
 game templates, edit the game code directly in the browser, and save and run their own
 games. It was built as a Web Technology semester project.
@@ -12,6 +20,12 @@ their creations under their own account.
 <p align="center">
   <img src="docs/screenshots/01-login.png" alt="CodePlay login screen with cyberpunk background" width="800">
 </p>
+
+
+> **Try it live:** the [GitHub Pages demo](https://harshith0308.github.io/codeplay/demo/) hosts the three
+> game templates with the same editable-code + live-preview workflow as the real editor.
+> The full application (accounts, saving, MySQL persistence) is PHP-based — see
+> [Getting Started](#getting-started) to run it locally.
 
 ## Features
 
